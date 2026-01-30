@@ -152,6 +152,7 @@ async def handle_text(update: Update, context: ContextTypes.DEFAULT_TYPE):
 
 def main():
     print("DEBUG TOKEN =", repr(TOKEN))
+    print("DEBUG LEN =", len(TOKEN) if TOKEN else None)
 
     app = ApplicationBuilder().token(TOKEN).build()
 
